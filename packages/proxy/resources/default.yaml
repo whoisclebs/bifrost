@@ -1,0 +1,21 @@
+app:
+  name: "ps-sentry-proxy"
+  port: 7362
+  logging_level: "INFO"
+  lang: "pt-BR"
+  write_timeout: 50s
+  read_timeout: 50s
+eureka:
+  addresses: ["http://localhost:8761/eureka"]
+bifrost:
+  sensitive-headers: Cookie,Set-Cookie
+  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 60000
+    read-timeout-millis: 60000
+  routes:
+    api:
+      path: /api/**
+      provider: eureka
+      serviceId: api-service
