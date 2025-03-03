@@ -1,0 +1,16 @@
+{
+  "name": "bifrost",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whoisclebs/bifrost.git"
+  },
+  "author": "whoisclebs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whoisclebs/bifrost/issues"
+  },
+  "homepage": "https://github.com/whoisclebs/bifrost#readme"
+}
